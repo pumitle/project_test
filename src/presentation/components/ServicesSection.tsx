@@ -5,7 +5,7 @@ import { SERVICE_CARDS } from "@/src/presentation/data/siteData";
 export default function ServicesSection() {
   return (
     <section className="relative bg-gradient-to-b from-[#0f2a5e] to-[#091744] pb-24 pt-0">
-      {/* White blob top-right (matching cloud shape from hero) */}
+
       <div className="absolute top-0 right-0 w-[300px] h-[180px] overflow-hidden pointer-events-none">
         <svg
           viewBox="0 0 300 180"

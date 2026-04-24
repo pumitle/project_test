@@ -9,7 +9,6 @@ interface Props {
 }
 
 export default function ServiceCard({ card, index }: Props) {
-  // Middle card is elevated
   const isCenter = index === 1;
 
   return (
