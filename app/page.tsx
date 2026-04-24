@@ -1,15 +1,15 @@
 
-import HeroBanner from "@/components/HeroBanner";
-import Navbar from "@/components/Navbar";
-import ServiceGrid from "@/components/ServiceGrid";
-import Image from "next/image";
+import HeroSection from "@/src/presentation/components/HeroSection"
+import Navbar from "@/src/presentation/components/layout/Navbar";
+import ServicesSection from "@/src/presentation/components/ServicesSection"
 
 export default function Home() {
- return (
-    <main className="min-h-screen bg-[#0d1b4b]">
+  return (
+      <main className="min-h-screen bg-[#0c1f52]">
       <Navbar />
-      <HeroBanner />
-      <ServiceGrid />
+      <HeroSection />
+      <ServicesSection />
     </main>
   );
 }
+

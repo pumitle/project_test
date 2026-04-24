@@ -5,41 +5,38 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/presentation/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      colors: {
-        navy: {
-          DEFAULT: "#0d1b4b",
-          light: "#1a2d6b",
-          dark: "#080f2a",
-        },
-        crimson: "#e8273a",
-      },
       fontFamily: {
-        heading: ["'Barlow Condensed'", "sans-serif"],
-        body: ["'DM Sans'", "sans-serif"],
+        barlow: ["var(--font-barlow)", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "sans-serif"],
+      },
+      colors: {
+        brand: {
+          navy: "#0c1f52",
+          "navy-dark": "#091744",
+          "navy-mid": "#0f2860",
+          red: "#c0392b",
+          "red-dark": "#962d22",
+        },
       },
       backgroundImage: {
         "hero-gradient":
-          "linear-gradient(135deg, #0d1b4b 60%, #8b1a2a 100%)",
-        "card-gradient":
-          "linear-gradient(145deg, #1a2d6b 0%, #0d1b4b 100%)",
+          "linear-gradient(120deg, #0c1f52 45%, #5c1a1a 100%)",
+        "card-red":
+          "linear-gradient(135deg, #c0392b 0%, #962d22 100%)",
+      },
+      animation: {
+        "float": "float 3.5s ease-in-out infinite",
+        "pulse-slow": "pulse 2.5s ease-in-out infinite",
       },
       keyframes: {
-        floatUp: {
+        float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-12px)" },
         },
-        fadeSlideIn: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-      },
-      animation: {
-        float: "floatUp 4s ease-in-out infinite",
-        "fade-slide": "fadeSlideIn 0.7s ease forwards",
       },
     },
   },
